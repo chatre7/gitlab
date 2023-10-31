@@ -5,7 +5,7 @@ services:
     image: gitlab/gitlab-ce:latest
     container_name: gitlab
     restart: always
-    hostname: 'http://localhost:8081'
+    hostname: 'localhost:8081'
     environment:
       GITLAB_OMNIBUS_CONFIG: "external_url 'http://localhost:8081';"
     ports:
